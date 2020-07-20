@@ -10,7 +10,7 @@ pipeline{
         }
         stage('Run container'){
             steps{
-                sh 'docker run -it -p 8081:8081 nodejs'
+                sh 'docker run -p 8081:8081 nodejs'
             }
         }
         stage('Pull from github'){
