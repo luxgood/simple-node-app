@@ -3,7 +3,6 @@ pipeline{
         docker{
             image 'node'
         }
-        label 'docker'
     }
     stages{
         stage('Pull from github'){
