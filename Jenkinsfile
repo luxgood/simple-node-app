@@ -1,7 +1,7 @@
 pipeline{
     agent none
     stages{
-        stage(Build image){
+        stage('Build image'){
             steps{
                 sh 'docker build --pull --rm -f "Dockerfile" -t nodejs:latest "."'
             }
