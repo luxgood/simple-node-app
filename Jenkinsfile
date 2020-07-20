@@ -21,7 +21,8 @@ pipeline{
         }
         stage('Run node server'){
             steps{
-                sh 'node simple-node-app/server.js'
+                sh 'ls -a'
+                //sh 'node simple-node-app/server.js'
             }  
         }
     }
