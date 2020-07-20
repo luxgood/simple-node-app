@@ -1,6 +1,7 @@
 pipeline{
     agent {
         dockerfile true
+        args '-p 8081:8081'
     }
     stages{
         stage('Pull from github'){
