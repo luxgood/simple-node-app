@@ -1,4 +1,5 @@
 pipeline{
+    
     agent{
         label 'docker'
     }
@@ -22,7 +23,8 @@ pipeline{
         stage('Run node server'){
             steps{
                 sh 'ls -a'
-                //sh 'node simple-node-app/server.js'
+                sh 'cd simple-node-app'
+                sh 'node server.js'
             }  
         }
     }
